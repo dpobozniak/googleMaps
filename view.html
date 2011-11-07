@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>View - googlemaps</title>
+    <meta http-equiv="content-script-type" content="text/javascript">
+	<style>
+	   body { font: 11px Arial, sans-serif; }
+		#map { height: 480px; width: 510px; }
+		.info-window { width: 240px; }
+		.info-window p { margin: 3px 0; }
+	</style>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+</head>
+<body>
+	
+	<div id="map" data-mapData='{"center":{"lat":50.264892,"lng":19.023782},"mapTypeId":"roadmap","zoom":15,"markers":[{"id":1,"lat":50.264892,"lng":19.023781999999983,"title":"Spodek","description":"aaaaa"},{"id":97,"lat":50.26651052941304,"lng":19.019490465576155,"title":"Grazynskiego","description":"bbbbb"},{"id":127,"lat":50.26247782002748,"lng":19.014512285644514,"title":"ccc","description":"cc"},{"id":128,"lat":50.26480970042474,"lng":19.032794222290022,"title":"ddd","description":"ddd"}]}'></div>
+	
+	<script src="http://code.jquery.com/jquery-1.7rc2.min.js"></script>
+	<script src="MyApp.googleMaps-view.js"></script>
+    <script>
+        $('#map').googleMaps();
+    </script>
+</body>
+</html>
